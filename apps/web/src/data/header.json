@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Home",
+    "link": "/"
+  },
+  {
+    "name": "Guide",
+    "link": "/guide"
+  },
+  {
+    "name": "Components",
+    "link": "/components"
+  },
+  {
+    "name": "Proveedor",
+    "link": "/proveedor/index"
+  },
+  {
+    "name": "Color",
+    "link": "/color"
+  }
+]

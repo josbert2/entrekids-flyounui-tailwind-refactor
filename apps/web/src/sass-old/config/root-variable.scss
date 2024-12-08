@@ -1,0 +1,45 @@
+:root {
+  --font: "Inter", sans-serif;
+
+  --gap: 16px;
+
+  @each $key, $val in $color-list {
+    --color-#{$key}: #{$val};
+  }
+
+  @each $key, $val in $font-weight-list {
+    #{'--font-' + $key}: #{$val};
+  }
+
+  @each $key, $val in $radius-list {
+    --radius-#{$key}: #{$val};
+  }
+
+  @each $key, $val in $z-index-list {
+    --zi-#{$key}: #{$val};
+  }
+
+  --border-width: 1px;
+  --border: var(--border-width) solid var(--color-border);
+
+  --shadow: 0 0 14px 0 rgb(33 37 41 / 5%);
+  --drop-shadow: drop-shadow(0 0 14px rgb(33 37 41 / 5%));
+
+  --transition-time: 0.3s;
+  --transition: all var(--transition-time);
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  @each $key, $val in $color-dark-list {
+    --color-#{$key}: #{$val};
+  }
+
+  --border: var(--border-width) solid var(--color-border);
+
+  --shadow: 0 0 14px 0 rgb(34 46 60 / 5%);
+  --drop-shadow: drop-shadow(0 0 14px 0 rgb(34 46 60 / 5%));
+
+  color-scheme: dark;
+}

@@ -1,0 +1,4 @@
+packageManager: pnpm@8.0.0
+packages:
+  - "packages/*"
+  - "apps/*"
