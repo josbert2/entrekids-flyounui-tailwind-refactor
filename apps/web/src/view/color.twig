@@ -5,319 +5,91 @@
 
 {% block content %}
  <div class="container py-6">
+    
     <section id="colors" class="scroll-mt-20">
-        <div id="colors" class="grid scroll-mt-20 gap-8">
-            <div id="slate" class="rounded-lg shadow-sm ring-1 ring-border">
-                <div class="flex items-center p-2 pb-0">
-                    <div class="flex-1 pl-1 text-sm font-medium"><h2 class="capitalize">slate</h2></div>
-                    <button
-                        type="button"
-                        role="combobox"
-                        aria-controls="radix-:r1e:"
-                        aria-expanded="false"
-                        aria-autocomplete="none"
-                        dir="ltr"
-                        data-state="closed"
-                        class="flex items-center justify-between whitespace-nowrap border border-input bg-transparent px-3 py-2 shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&amp;>span]:line-clamp-1 h-7 w-auto gap-1.5 rounded-lg pr-2 text-xs ml-auto"
-                    >
-                        <span class="font-medium">Format: </span><span class="font-mono text-xs text-muted-foreground">rgb</span>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-chevron-down h-4 w-4 opacity-50"
-                            aria-hidden="true"
-                        >
-                            <path d="m6 9 6 6 6-6"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex flex-col gap-1 p-2 sm:flex-row sm:gap-2">
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(210 40% 98%); --text: #000;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-50</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">50</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(210 40% 96.1%); --text: #000;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-100</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">100</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(214.3 31.8% 91.4%); --text: #000;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-200</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">200</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(212.7 26.8% 83.9%); --text: #000;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-300</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">300</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(215 20.2% 65.1%); --text: #000;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-400</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">400</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(215.4 16.3% 46.9%); --text: #fff;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-500</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">500</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(215.3 19.3% 34.5%); --text: #fff;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-600</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">600</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(215.3 25% 26.7%); --text: #fff;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-700</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">700</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(217.2 32.6% 17.5%); --text: #fff;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-800</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">800</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(222.2 47.4% 11.2%); --text: #fff;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-900</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">900</span>
-                        </div>
-                    </button>
-                    <button
-                        class="group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto [&amp;>svg]:absolute [&amp;>svg]:right-4 [&amp;>svg]:top-4 [&amp;>svg]:h-3.5 [&amp;>svg]:w-3.5 [&amp;>svg]:opacity-0 [&amp;>svg]:transition-opacity"
-                        style="--bg: hsl(222.2 84% 4.9%); --text: #fff;"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="lucide lucide-clipboard group-hover:opacity-100"
-                        >
-                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                        </svg>
-                        <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
-                        <div class="flex w-full flex-col items-center justify-center gap-1">
-                            <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">slate-950</span>
-                            <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">950</span>
-                        </div>
-                    </button>
-                </div>
-            </div>
+        <div id="color-palettes" class="grid scroll-mt-20 gap-8">
+            <!-- Aquí insertaremos las paletas generadas dinámicamente -->
         </div>
     </section>
 </div>
+<script type="module">
+    import { colors } from '@/sass/base/Colors.js';
 
+
+// Seleccionamos el contenedor donde insertaremos el HTML
+const colorPalettesContainer = document.getElementById('color-palettes');
+
+Object.keys(colors).forEach(paletteName => {
+  const palette = colors[paletteName];
+
+  // Creamos el contenedor principal de la paleta
+  const paletteDiv = document.createElement('div');
+  paletteDiv.className = 'rounded-lg shadow-sm ring-1 ring-border';
+  paletteDiv.id = paletteName;
+
+  // Encabezado de la paleta (título y botón de formato)
+  const headerDiv = document.createElement('div');
+  headerDiv.className = 'flex items-center p-2 pb-0';
+
+  const titleDiv = document.createElement('div');
+  titleDiv.className = 'flex-1 pl-1 text-sm font-medium';
+  titleDiv.innerHTML = `<h2 class="capitalize">${paletteName}</h2>`;
+
+  const formatButton = document.createElement('button');
+  formatButton.type = 'button';
+  formatButton.className = 'flex items-center justify-between whitespace-nowrap border border-input bg-transparent px-3 py-2 shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-7 w-auto gap-1.5 rounded-lg pr-2 text-xs ml-auto';
+  formatButton.innerHTML = `
+    <span class="font-medium">Format: </span><span class="font-mono text-xs text-muted-foreground">rgb</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-chevron-down h-4 w-4 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+  `;
+
+  headerDiv.appendChild(titleDiv);
+  headerDiv.appendChild(formatButton);
+
+  // Contenedor de los swatches (colores)
+  const swatchesDiv = document.createElement('div');
+  swatchesDiv.className = 'flex flex-col gap-1 p-2 sm:flex-row sm:gap-2';
+
+  // Generamos cada "botón" (swatch) para cada tono
+  Object.keys(palette).forEach(shade => {
+    const colorValue = palette[shade];
+    // Determinamos el color del texto en función del fondo
+    // Como ejemplo, usaremos #000 en tonos claros y #fff en tonos oscuros.
+    // Esto se puede mejorar midiendo la luminosidad del color.
+    const textColor = shade < 500 ? '#000' : '#fff';
+
+    const swatchBtn = document.createElement('button');
+    swatchBtn.className = 'group relative flex aspect-[3/1] w-full flex-1 flex-col gap-2 text-[--text] sm:aspect-[2/3] sm:h-auto sm:w-auto';
+    swatchBtn.style.setProperty('--bg', colorValue);
+    swatchBtn.style.setProperty('--text', textColor);
+
+    swatchBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" class="lucide lucide-clipboard group-hover:opacity-100" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+      </svg>
+      <div class="w-full flex-1 rounded-md bg-[--bg] md:rounded-lg"></div>
+      <div class="flex w-full flex-col items-center justify-center gap-1">
+        <span class="hidden font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:flex">${paletteName}-${shade}</span>
+        <span class="font-mono text-xs tabular-nums text-muted-foreground transition-colors group-hover:text-foreground lg:hidden">${shade}</span>
+      </div>
+    `;
+
+    // Ejemplo de evento click para copiar el valor al portapapeles
+    swatchBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(colorValue);
+      alert(`Color ${paletteName}-${shade} copiado: ${colorValue}`);
+    });
+
+    swatchesDiv.appendChild(swatchBtn);
+  });
+
+  // Añadimos el encabezado y las muestras al contenedor principal de la paleta
+  paletteDiv.appendChild(headerDiv);
+  paletteDiv.appendChild(swatchesDiv);
+
+  // Insertamos la paleta en el contenedor principal
+  colorPalettesContainer.appendChild(paletteDiv);
+});
+  </script>
 {% endblock %}

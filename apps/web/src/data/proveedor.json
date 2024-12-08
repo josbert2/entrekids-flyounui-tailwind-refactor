@@ -1,0 +1,297 @@
+[
+    {
+      "title": "Código",
+      "isBtn": true,
+      "css": "w-full h-11 bg-blue-500 text-white mb-3"
+    },
+    {
+      "icon": "Focus",
+      "title": "Avanzado",
+      "isBtn": true,
+      "css": "w-full h-11 bg-[#ed6f5e] text-white"
+    },
+    {
+      "title": "Configuración Saas",
+      "items": [
+        {
+          "title": "Facturación",
+          "active": true,
+          "isOpen": false,
+          "shortName": "facturacion_electronica",
+          
+          "active": true,
+          "isOpen": false,
+          "shortName": "facturacion_electronica"
+        },
+        {
+          "title": "Planes",
+          "icon": "FileCheck2",
+          "active": true,
+          "isOpen": false,
+          "children": [
+            {
+              "title": "Planes",
+              "icon": "HandCoins",
+              "link": "${Routing.getHost()}proveedor/planes",
+              "active": true,
+              "isOpen": false
+            },
+            {
+              "title": "Administrar plan",
+              "icon": "HandCoins",
+              "link": "${Routing.getHost()}manage-plan/{clientId}",
+              "active": true,
+              "isOpen": false,
+              "isAdminRoute": true
+            },
+            {
+     
+              "title": "Links de pago",
+              "icon": "HandCoins",
+              "link": "/cambiar",
+              "active": true,
+              "isOpen": false
+            },
+            {
+              "title": "Detalle plan",
+              "icon": "HandCoins",
+              "link": "${Routing.getHost()}proveedor/plan-detail",
+              "active": true,
+              "isOpen": false
+            }
+
+          ] 
+        }
+      ]
+    },
+    {
+      "title": "Boletería",
+      "items": [
+        {
+          "title": "Boletería",
+          "icon": "TicketCheck",
+          "link": "${Routing.getHost()}proveedor/boleteria",
+          "active": true,
+          "isOpen": false,
+          "shortName": "boleteria"
+        },
+        {
+          "title": "Caja",
+          "icon": "HandCoins",
+          "link": "${Routing.getHost()}proveedor/caja",
+          "active": true,
+          "isOpen": false
+        }
+      ]
+    },
+    {
+      "title": "Gestión",
+      "items": [
+        {
+          "title": "Clientes",
+          "icon": "TicketCheck",
+          "link": "${Routing.getHost()}cliente/lista/proveedor",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Mis Reservas",
+          "icon": "FileSpreadsheet",
+          "link": "${Routing.getHost()}actividad-evento/proveedor/mis-reservas/market_id/actividad_evento_id",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Calendario",
+          "icon": "CalendarClock",
+          "link": "${Routing.getHost()}actividad-evento/proveedor/calendario/market_id/actividad_evento_id",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Actividades",
+          "icon": "FileSpreadsheet",
+          "link": "${Routing.getHost()}actividad/proveedor/lista",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Entradas",
+          "icon": "ClipboardList",
+          "link": "${Routing.getHost()}entrada/buscador",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Devoluciones",
+          "icon": "IterationCw",
+          "active": true,
+          "isOpen": false,
+          "children": [
+            {
+              "title": "Pendientes",
+              "icon": "IterationCw",
+              "link": "${Routing.getHost()}devolucion/dinero/gestion/pending",
+              "active": true,
+              "isOpen": false,
+              "shortName": "devoluciones"
+            },
+            {
+              "title": "Finalizadas",
+              "icon": "IterationCw",
+              "link": "${Routing.getHost()}devolucion/dinero/gestion/finished",
+              "active": true,
+              "isOpen": false,
+              "shortName": "devoluciones"
+            }
+          ]
+        },
+        {
+          "title": "Clientes",
+          "icon": "UsersRound",
+          "active": true,
+          "isOpen": false,
+          "children": [
+            {
+              "title": "Waiver",
+              "icon": "UsersRound",
+              "link": "${Routing.getHost()}waiver/lista",
+              "active": true,
+              "isOpen": false
+            },
+            {
+              "title": "Clientes",
+              "icon": "UsersRound",
+              "link": "${Routing.getHost()}cliente/lista/proveedor",
+              "active": true,
+              "isOpen": false
+            }
+          ]
+        },
+        {
+          "title": "Acompañantes",
+          "icon": "Users",
+          "link": "${Routing.getHost()}cliente/lista/acompanante",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Cortesías",
+          "icon": "Gift",
+          "link": "${Routing.getHost()}grupo/proveedor",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Códigos Externos",
+          "icon": "ExternalLink",
+          "link": "${Routing.getHost()}codigo-externo/",
+          "active": true,
+          "isOpen": false,
+          "shortName": "codigosExternos"
+        }
+      ]
+    },
+    {
+      "title": "Actividades",
+      "items": [
+        {
+          "title": "Crear actividades",
+          "icon": "BadgePlus",
+          "link": "/cambiar",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Reseñas",
+          "icon": "Star",
+          "link": "${Routing.getHost()}resena/proveedor/lista",
+          "active": true,
+          "isOpen": false,
+          "shiortName": "reseñas"
+        }
+      ]
+    },
+    {
+      "title": "Finanzas",
+      "items": [
+        {
+          "title": "Balance",
+          "icon": "CircleDollarSign",
+          "link": "/cambiar",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Transacción",
+          "icon": "ArrowRightLeft",
+          "link": "/cambiar",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Liquidación",
+          "icon": "Banknote",
+          "link": "/cambiar",
+          "active": true,
+          "isOpen": false
+        }
+      ]
+    },
+    {
+      "title": "Proveedor",
+      "items": [
+        {
+          "title": "Información",
+          "icon": "FileBadge2",
+          "link": "${Routing.getHost()}proveedor/perfil",
+          "active": true,
+          "isOpen": false
+        }
+      ]
+    },
+    {
+      "title": "Control de asistencia",
+      "items": [
+        {
+          "title": "Control de asistencia",
+          "icon": "CircleDashed",
+          "link": "${Routing.getHost()}assistance",
+          "active": true,
+          "isOpen": false
+        }
+      ]
+    },
+    {
+      "title": "Temporizador",
+      "items": [
+        {
+          "title": "Temporizadores",
+          "icon": "Timer",
+          "link": "${Routing.getHost()}waiver/lista",
+          "active": true,
+          "isOpen": false,
+          "shortName": "waiver"
+        }
+      ]
+    },
+    {
+      "title": "General",
+      "items": [
+        {
+          "title": "Promociones",
+          "icon": "Proportions",
+          "link": "${Routing.getHost()}promocion/proveedor/listado",
+          "active": true,
+          "isOpen": false
+        },
+        {
+          "title": "Tags",
+          "icon": "Tags",
+          "link": "${Routing.getHost()}proveedor/tag",
+          "active": true,
+          "isOpen": false
+        }
+      ]
+    }
+]

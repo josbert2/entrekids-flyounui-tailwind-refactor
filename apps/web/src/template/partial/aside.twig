@@ -7,7 +7,7 @@
                         class="duration-200 relative h-svh w-[--sidebar-width] bg-transparent transition-[width] ease-linear group-data-[collapsible=offcanvas]:w-0 group-data-[side=right]:rotate-180 group-data-[collapsible=icon]:w-[--sidebar-width-icon]"
                     ></div>
                     <div
-                        class="duration-200 fixed inset-y-0 z-10 hidden h-svh w-[--sidebar-width] transition-[left,right,width] ease-linear md:flex left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l"
+                        class="duration-200 border-border fixed inset-y-0 z-10 hidden h-svh w-[--sidebar-width] transition-[left,right,width] ease-linear md:flex left-0 group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l"
                     >
                         <div
                             data-sidebar="sidebar"
@@ -27,44 +27,20 @@
                                             aria-expanded="false"
                                             data-state="closed"
                                         >
-                                            <div class="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-command-icon size-4"
-                                                >
-                                                    <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
-                                                </svg>
+                                            <div class="flex aspect-square size-8 items-center justify-center rounded-lg text-sidebar-primary-foreground">
+                                                <img src="https://www.bookforce.io/wp-content/uploads/2024/03/Logo-Bookforce.png" />
                                             </div>
-                                            <div class="grid flex-1 text-left text-sm leading-tight"><span class="truncate font-semibold text-text-sub-600">Evil Corp.</span><span class="truncate text-xs">Free</span></div>
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                class="lucide lucide-chevrons-up-down-icon ml-auto"
-                                            >
-                                                <path d="m7 15 5 5 5-5"></path>
-                                                <path d="m7 9 5-5 5 5"></path>
-                                            </svg>
+                                            <div class="grid flex-1 text-left text-sm leading-tight">
+                                                <span class="truncate font-semibold text-text-sub-600">Demo Bookforce</span>
+                                                <span class="truncate text-xs">Bookforce.io</span>
+                                            </div>
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path stroke="#FF8A65" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.9 7.56c.31-3.6 2.16-5.07 6.21-5.07h.13c4.47 0 6.26 1.79 6.26 6.26v6.52c0 4.47-1.79 6.26-6.26 6.26h-.13c-4.02 0-5.87-1.45-6.2-4.99M15 12H3.62M5.85 8.65L2.5 12l3.35 3.35"></path></svg>
                                         </button>
                                     </li>
                                 </ul>
                             </div>
                             <div data-sidebar="content" class="flex min-h-0 flex-1 flex-col gap-2 overflow-auto group-data-[collapsible=icon]:overflow-hidden">
-                                <div data-sidebar="group" class="relative flex w-full min-w-0 flex-col p-2">
+                                {#<div data-sidebar="group" class="relative flex w-full min-w-0 flex-col p-2">
                                     <div
                                         data-sidebar="group-label"
                                         class="duration-200 flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] ease-linear focus-visible:ring-2 [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0"
@@ -369,207 +345,78 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </div>
-                                <div data-sidebar="group" class="relative flex w-full min-w-0 flex-col p-2 group-data-[collapsible=icon]:hidden">
-                                    <div
-                                        data-sidebar="group-label"
-                                        class="duration-200 flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] ease-linear focus-visible:ring-2 [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0"
-                                    >
-                                        Projects
+                                </div>#}
+                                 {% for nav in proveedor %}
+                                    <div data-sidebar="group" class="relative flex w-full min-w-0 flex-col p-2 group-data-[collapsible=icon]:hidden">
+                                        <div
+                                            data-sidebar="group-label"
+                                            class="duration-200 flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] ease-linear focus-visible:ring-2 [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0"
+                                        >
+                                            {{ nav.title }}
+                                        </div>
+                                        {% if nav.items %}
+                                        <ul data-sidebar="menu" class="flex w-full min-w-0 flex-col gap-1">
+                                            {% for item in nav.items %}
+                                                <li data-sidebar="menu-item" class="group/menu-item relative">
+                                                    <a
+                                                        href="#"
+                                                        data-sidebar="menu-button"
+                                                        data-size="default"
+                                                        data-active="false"
+                                                        class="peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&amp;>span:last-child]:truncate [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground h-8 text-sm"
+                                                    >
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="lucide lucide-frame-icon"
+                                                        >
+                                                            <line x1="22" x2="2" y1="6" y2="6"></line>
+                                                            <line x1="22" x2="2" y1="18" y2="18"></line>
+                                                            <line x1="6" x2="6" y1="2" y2="22"></line>
+                                                            <line x1="18" x2="18" y1="2" y2="22"></line>
+                                                        </svg>
+                                                        <span>{{ item.title }}</span>
+                                                    </a>
+                                                    <button
+                                                        data-sidebar="menu-action"
+                                                        class="absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 after:absolute after:-inset-2 after:md:hidden peer-data-[size=sm]/menu-button:top-1 peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 group-data-[collapsible=icon]:hidden group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0 outline-none"
+                                                        id="radix-vue-dropdown-menu-trigger-v-0-9"
+                                                        type="button"
+                                                        aria-haspopup="menu"
+                                                        aria-expanded="false"
+                                                        data-state="closed"
+                                                    >
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="lucide lucide-ellipsis-icon"
+                                                        >
+                                                            <circle cx="12" cy="12" r="1"></circle>
+                                                            <circle cx="19" cy="12" r="1"></circle>
+                                                            <circle cx="5" cy="12" r="1"></circle>
+                                                        </svg>
+                                                        <span class="sr-only">More</span>
+                                                    </button>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
                                     </div>
-                                    <ul data-sidebar="menu" class="flex w-full min-w-0 flex-col gap-1">
-                                        <li data-sidebar="menu-item" class="group/menu-item relative">
-                                            <a
-                                                href="#"
-                                                data-sidebar="menu-button"
-                                                data-size="default"
-                                                data-active="false"
-                                                class="peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&amp;>span:last-child]:truncate [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground h-8 text-sm"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-frame-icon"
-                                                >
-                                                    <line x1="22" x2="2" y1="6" y2="6"></line>
-                                                    <line x1="22" x2="2" y1="18" y2="18"></line>
-                                                    <line x1="6" x2="6" y1="2" y2="22"></line>
-                                                    <line x1="18" x2="18" y1="2" y2="22"></line>
-                                                </svg>
-                                                <span>Design Engineering</span>
-                                            </a>
-                                            <button
-                                                data-sidebar="menu-action"
-                                                class="absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 after:absolute after:-inset-2 after:md:hidden peer-data-[size=sm]/menu-button:top-1 peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 group-data-[collapsible=icon]:hidden group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0 outline-none"
-                                                id="radix-vue-dropdown-menu-trigger-v-0-9"
-                                                type="button"
-                                                aria-haspopup="menu"
-                                                aria-expanded="false"
-                                                data-state="closed"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-ellipsis-icon"
-                                                >
-                                                    <circle cx="12" cy="12" r="1"></circle>
-                                                    <circle cx="19" cy="12" r="1"></circle>
-                                                    <circle cx="5" cy="12" r="1"></circle>
-                                                </svg>
-                                                <span class="sr-only">More</span>
-                                            </button>
-                                        </li>
-                                        <li data-sidebar="menu-item" class="group/menu-item relative">
-                                            <a
-                                                href="#"
-                                                data-sidebar="menu-button"
-                                                data-size="default"
-                                                data-active="false"
-                                                class="peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&amp;>span:last-child]:truncate [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground h-8 text-sm"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-chart-pie-icon"
-                                                >
-                                                    <path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"></path>
-                                                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
-                                                </svg>
-                                                <span>Sales &amp; Marketing</span>
-                                            </a>
-                                            <button
-                                                data-sidebar="menu-action"
-                                                class="absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 after:absolute after:-inset-2 after:md:hidden peer-data-[size=sm]/menu-button:top-1 peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 group-data-[collapsible=icon]:hidden group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0 outline-none"
-                                                id="radix-vue-dropdown-menu-trigger-v-0-10"
-                                                type="button"
-                                                aria-haspopup="menu"
-                                                aria-expanded="false"
-                                                data-state="closed"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-ellipsis-icon"
-                                                >
-                                                    <circle cx="12" cy="12" r="1"></circle>
-                                                    <circle cx="19" cy="12" r="1"></circle>
-                                                    <circle cx="5" cy="12" r="1"></circle>
-                                                </svg>
-                                                <span class="sr-only">More</span>
-                                            </button>
-                                        </li>
-                                        <li data-sidebar="menu-item" class="group/menu-item relative">
-                                            <a
-                                                href="#"
-                                                data-sidebar="menu-button"
-                                                data-size="default"
-                                                data-active="false"
-                                                class="peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&amp;>span:last-child]:truncate [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground h-8 text-sm"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-map-icon"
-                                                >
-                                                    <path
-                                                        d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"
-                                                    ></path>
-                                                    <path d="M15 5.764v15"></path>
-                                                    <path d="M9 3.236v15"></path>
-                                                </svg>
-                                                <span>Travel</span>
-                                            </a>
-                                            <button
-                                                data-sidebar="menu-action"
-                                                class="absolute right-1 top-1.5 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring transition-transform hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 peer-hover/menu-button:text-sidebar-accent-foreground [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 after:absolute after:-inset-2 after:md:hidden peer-data-[size=sm]/menu-button:top-1 peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 group-data-[collapsible=icon]:hidden group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0 outline-none"
-                                                id="radix-vue-dropdown-menu-trigger-v-0-11"
-                                                type="button"
-                                                aria-haspopup="menu"
-                                                aria-expanded="false"
-                                                data-state="closed"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-ellipsis-icon"
-                                                >
-                                                    <circle cx="12" cy="12" r="1"></circle>
-                                                    <circle cx="19" cy="12" r="1"></circle>
-                                                    <circle cx="5" cy="12" r="1"></circle>
-                                                </svg>
-                                                <span class="sr-only">More</span>
-                                            </button>
-                                        </li>
-                                        <li data-sidebar="menu-item" class="group/menu-item relative">
-                                            <button
-                                                data-sidebar="menu-button"
-                                                data-size="default"
-                                                data-active="false"
-                                                class="peer/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none ring-sidebar-ring transition-[width,height,padding] focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 group-has-[[data-sidebar=menu-action]]/menu-item:pr-8 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:bg-sidebar-accent data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground group-data-[collapsible=icon]:!size-8 group-data-[collapsible=icon]:!p-2 [&amp;>span:last-child]:truncate [&amp;>svg]:size-4 [&amp;>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground h-8 text-sm text-sidebar-foreground/70"
-                                            >
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    stroke="currentColor"
-                                                    stroke-width="2"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    class="lucide lucide-ellipsis-icon text-sidebar-foreground/70"
-                                                >
-                                                    <circle cx="12" cy="12" r="1"></circle>
-                                                    <circle cx="19" cy="12" r="1"></circle>
-                                                    <circle cx="5" cy="12" r="1"></circle>
-                                                </svg>
-                                                <span>More</span>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
+                                 {% endfor %}
                             </div>
                             <div data-sidebar="footer" class="flex flex-col gap-2 p-2">
                                 <ul data-sidebar="menu" class="flex w-full min-w-0 flex-col gap-1">
@@ -647,7 +494,8 @@
                             <div data-orientation="vertical" aria-orientation="vertical" role="separator" class="shrink-0 bg-border relative w-px mr-2 h-4"></div>
                             <nav aria-label="breadcrumb" class="">
                                 <ol class="flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5">
-                                    <li class="items-center gap-1.5 hidden md:block"><a class="transition-colors hover:text-foreground" href="#"> Building Your Application </a></li>
+                                    <li class="items-center gap-1.5 hidden md:block"><a class="transition-colors hover:text-foreground" href="#"> 
+                                    Proveedor </a></li>
                                     <li role="presentation" aria-hidden="true" class="[&amp;>svg]:w-3.5 [&amp;>svg]:h-3.5 hidden md:block">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -664,18 +512,14 @@
                                             <path d="m9 18 6-6-6-6"></path>
                                         </svg>
                                     </li>
-                                    <li class="inline-flex items-center gap-1.5"><span role="link" aria-disabled="true" aria-current="page" class="font-normal text-foreground">Data Fetching</span></li>
+                                    <li class="inline-flex items-center gap-1.5"><span role="link" aria-disabled="true" aria-current="page" class="font-normal text-foreground">Planes</span></li>
                                 </ol>
                             </nav>
                         </div>
                     </header>
                     <div class="flex flex-1 flex-col gap-4 p-4 pt-0">
-                        <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-                            <div class="aspect-video rounded-xl bg-muted/50"></div>
-                            <div class="aspect-video rounded-xl bg-muted/50"></div>
-                            <div class="aspect-video rounded-xl bg-muted/50"></div>
-                        </div>
-                        <div class="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min"></div>
+                        {% block contentMain %}
+                        {% endblock %}
                     </div>
                 </main>
             </div>
