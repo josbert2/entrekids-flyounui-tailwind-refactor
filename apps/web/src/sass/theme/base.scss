@@ -12,7 +12,7 @@
         --popover: 0 0% 100%;
         --popover-foreground: 240 10% 3.9%;
       
-        --primary: 346.8 77.2% 49.8%;
+        --primary: 228 52% 23%;
         --primary-foreground: 355.7 100% 97.3%;
       
         --secondary: 240 4.8% 95.9%;
@@ -435,14 +435,44 @@
 		font-variation-settings: normal;
 	}
 
-  @font-face {
-    font-family: "Avenir";
-    src: url('../../font/Avenir/AvenirRegular.otf');
-  }
+
+
+
   
   @font-face {
-    font-family: "Poppins-Regular";
+    font-family: "Poppins";
+    font-weight: 400; /* Regular */
     src: url("../../font/Poppings/Poppins-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 700; /* Bold */
+    src: url("../../font/Poppings/Poppins-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 500; /* Medium */
+    src: url("../../font/Poppings/Poppins-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 600; /* SemiBold */
+    src: url("../../font/Poppings/Poppins-SemiBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 800; /* ExtraBold */
+    src: url("../../font/Poppings/Poppins-ExtraBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 900; /* Black */
+    src: url("../../font/Poppings/Poppins-Black.ttf") format("truetype");
   }
 
  

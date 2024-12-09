@@ -221,7 +221,7 @@ export const colors = {
     'alpha-16': 'var(--black-alpha-16)',
     'alpha-10': 'var(--black-alpha-10)',
   },
-  primary: {
+  primarybg: {
     dark: 'var(--primary-dark)',
     darker: 'var(--primary-darker)',
     base: 'var(--primary-base)',

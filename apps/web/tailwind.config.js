@@ -15,12 +15,17 @@ module.exports = {
     "./src/view/**/*.{twig,html}",
     "./src/template/**/*.twig",
     "./src/js/**/*.js",
-    "./src/sass/**/*.scss" // Ajusta según tu estructura
+    "./src/sass/**/*.scss", // Ajusta según tu estructura
+
+    // preline
+    "../../packages/preline/dist/**/*.js",
   ],
   theme: {
-    fontSize: {
-      ...texts,
-      inherit: 'inherit',
+    extend: {
+      fontSize: {
+        ...texts,
+        inherit: 'inherit',
+      },
     },
     boxShadow: {
       ...shadows,
@@ -34,5 +39,7 @@ module.exports = {
       ...colors,
     },
   },
-  plugins: [],
+  plugins: [
+    require('../../packages/preline/plugin'),
+  ],
 };
